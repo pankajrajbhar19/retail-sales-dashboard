@@ -39,7 +39,7 @@ Retail companies struggle with manual sales data tracking. This dashboard helps 
 - Bar Chart: Revenue by Region  
 - Line Chart: Monthly Sales Trend  
 - Pie Chart: Category Revenue Share  
-
+### Pankaj Rajbhar
 ### 📎 GitHub:
 [https://github.com/pankajrajbhar19](https://github.com/pankajrajbhar19)
 """, unsafe_allow_html=True)
