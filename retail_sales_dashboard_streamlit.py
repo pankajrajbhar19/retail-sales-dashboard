@@ -6,7 +6,35 @@ import seaborn as sns
 
 st.set_page_config(page_title="Retail Sales Dashboard", layout="wide")
 
-st.title("🛍️ Retail Sales Performance Dashboard")
+st.title(st.markdown("""
+## 🛍️ Project Overview
+
+Retail companies need to analyze product and regional sales performance to drive business decisions. This dashboard provides intuitive visualizations for understanding trends, top categories, and region-wise metrics.
+
+### 🔍 Problem Statement
+Retail companies struggle with manual sales data tracking. This dashboard helps automate the process and extract actionable insights.
+
+### 🎯 Objective
+- Understand which product categories and regions generate the most revenue  
+- Track monthly sales performance  
+- Monitor KPIs like total revenue, average order value, and total units sold  
+- Visualize sales distribution across categories and regions
+
+### 🧰 Tools Used
+- **Python** (Pandas, Seaborn, Matplotlib)  
+- **Streamlit** for web-based dashboard  
+- **CSV** for data source
+
+### 📊 Sample Visuals
+- Bar Chart: Revenue by Region  
+- Line Chart: Monthly Sales Trend  
+- Pie Chart: Category Revenue Share  
+
+### 📎 GitHub:
+[https://github.com/pankajrajbhar19](https://github.com/pankajrajbhar19)
+
+""", unsafe_allow_html=True)
+)
 
 # Load data
 df = pd.read_csv("retail_sales_data.csv", parse_dates=['Date'])
