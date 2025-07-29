@@ -6,9 +6,18 @@ import seaborn as sns
 
 st.set_page_config(page_title="Retail Sales Dashboard", layout="wide")
 
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+st.set_page_config(page_title="Retail Sales Dashboard", layout="wide")
+
+# ✅ Proper usage of st.title and st.markdown (not nested)
 st.title("🛍️ Retail Sales Performance Dashboard")
-  st.markdown("""
-## 🛍️ Project Overview
+
+st.markdown("""
+## 📘 Project Overview
 
 Retail companies need to analyze product and regional sales performance to drive business decisions. This dashboard provides intuitive visualizations for understanding trends, top categories, and region-wise metrics.
 
@@ -33,9 +42,8 @@ Retail companies struggle with manual sales data tracking. This dashboard helps 
 
 ### 📎 GitHub:
 [https://github.com/pankajrajbhar19](https://github.com/pankajrajbhar19)
-
 """, unsafe_allow_html=True)
-)
+
 
 # Load data
 df = pd.read_csv("retail_sales_data.csv", parse_dates=['Date'])
