@@ -6,7 +6,8 @@ import seaborn as sns
 
 st.set_page_config(page_title="Retail Sales Dashboard", layout="wide")
 
-st.title(st.markdown("""
+st.title("🛍️ Retail Sales Performance Dashboard")
+  st.markdown("""
 ## 🛍️ Project Overview
 
 Retail companies need to analyze product and regional sales performance to drive business decisions. This dashboard provides intuitive visualizations for understanding trends, top categories, and region-wise metrics.
