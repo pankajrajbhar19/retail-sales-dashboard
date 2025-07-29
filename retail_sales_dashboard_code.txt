@@ -1,0 +1,38 @@
+
+# Retail Sales Performance Dashboard
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = pd.read_csv("retail_sales_data.csv", parse_dates=['Date'])
+
+# KPI calculations
+total_revenue = df['Revenue'].sum()
+total_units = df['UnitsSold'].sum()
+avg_order_value = total_revenue / len(df)
+
+print(f"Total Revenue: ₹{total_revenue:,.0f}")
+print(f"Total Units Sold: {total_units}")
+print(f"Average Order Value: ₹{avg_order_value:,.0f}")
+
+# Revenue by Region
+sns.barplot(data=df.groupby('Region')['Revenue'].sum().reset_index(), x='Region', y='Revenue')
+plt.title('Revenue by Region')
+plt.show()
+
+# Monthly Trend
+monthly_sales = df.groupby(df['Date'].dt.to_period("M"))['Revenue'].sum().reset_index()
+monthly_sales['Date'] = monthly_sales['Date'].astype(str)
+sns.lineplot(data=monthly_sales, x='Date', y='Revenue', marker='o')
+plt.xticks(rotation=45)
+plt.title('Monthly Revenue Trend')
+plt.tight_layout()
+plt.show()
+
+# Pie chart by Category
+category_sales = df.groupby('Category')['Revenue'].sum()
+plt.pie(category_sales, labels=category_sales.index, autopct='%1.1f%%', startangle=140)
+plt.title('Revenue Share by Category')
+plt.show()
