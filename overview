@@ -1,0 +1,30 @@
+🚀 Just Launched: Retail Sales Performance Dashboard
+I recently built a fully interactive dashboard using Python + Streamlit to visualize key metrics for a retail business.
+This project helped me strengthen my skills in data analysis, visualization, and dashboard development.
+
+🧩 Key Features:
+
+📊 Revenue by Region (Bar Chart)
+
+📈 Monthly Sales Trend (Line Chart)
+
+🍕 Revenue Share by Category (Pie Chart)
+
+🧮 KPIs: Total Revenue, Units Sold, Average Order Value
+
+💡 Built with:
+
+Pandas, Matplotlib, Seaborn for data processing and visualization
+
+Streamlit for creating and deploying the dashboard
+
+Dummy retail sales dataset in .csv format
+
+🔗 Live Demo: [Insert your Streamlit app link here]
+💻 GitHub Repo: https://github.com/pankajrajbhar19
+
+Excited to continue building more data-driven projects!
+Feedback is welcome 🙌
+
+#DataScience #Python #Streamlit #RetailAnalytics #100DaysOfCode #DataVisualization #PortfolioProject #Hackathon
+
