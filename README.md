@@ -60,4 +60,4 @@ The dashboard will launch in your browser at `http://localhost:8501`
 
 ---
 
-Built with ❤️ by [Your Name]
+Built with ❤️ by [Pankaj Rajbhar]
